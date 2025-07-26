@@ -19,7 +19,7 @@ const Footer = () => {
           <h3 className="text-xl font-semibold mb-3">Contact Us</h3>
           <div className="flex items-start space-x-3 mb-2 text-sm sm:text-base">
             <FaPhoneAlt className="mt-1" />
-            <span>087502 91302</span>
+            <span>+91 8305014935</span>
           </div>
           <div className="flex items-start space-x-3 text-sm sm:text-base">
             <FaMapMarkerAlt className="mt-1" />
