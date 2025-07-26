@@ -18,7 +18,7 @@ const testimonials = [
     name: 'Aaba',
     image: `${test2}`,
     description:
-      "They took great care of my indie cat, sharing his pictures and videos every day + available on video call too while I was away for a week. Extremely helpful people. House cat Cairo is super chill and got along great with my cat. Recommend!",
+      "Sheerin took great care of my indie cat, sharing his pictures and videos every day + available on video call too while I was away for a week. Extremely helpful people. House cat Cairo is super chill and got along great with my cat. Recommend!",
   },
   {
     name: 'Neel Maurya',
@@ -30,7 +30,7 @@ const testimonials = [
     name: 'Ashish Bhandari',
     image: `${test4}`,
     description:
-      "I left my kitten for 5 days and had not to worry at all. They took extremely good care of my kitten.",
+      "I left my kitten for 5 days and had not to worry at all. Sheerin took extremely good care of my kitten.",
   },
 ];
 
