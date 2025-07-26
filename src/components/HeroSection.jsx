@@ -1,75 +1,94 @@
-import React from 'react'
-import BigCat from '../assets/BigCat.webp'
-import CatPaws from '../assets/catpaws.webp'
-import Stroke from '../assets/Stroke.webp'
-import pawsImage from '../assets/pawsImage.webp'
-import { useNavigate } from 'react-router-dom'
+import React from 'react';
+import { Star, MapPin, Clock, Phone } from 'lucide-react';
 
-function HeroSection() {
-
-  const navigate = useNavigate();
-
+const Hero = () => {
   return (
-    <div className="bg-[#94b49f] w-full min-h-screen flex items-center justify-center px-4 sm:px-6 py-10 relative overflow-hidden">
-  {/* Main Container */}
-  <div className="flex flex-col-reverse md:flex-row items-center justify-between w-full max-w-7xl mx-auto gap-y-10 gap-x-10 z-10">
-    
-    {/* Left: Text */}
-    <div className="flex-1 text-center md:text-left">
-      <p className="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl mb-4 drop-shadow-md">
-        Tailored For Happy Cats
-      </p>
+    <section id="home" className="bg-gradient-to-br from-orange-50 to-orange-100 py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Left Content */}
+          <div className="space-y-8">
+            <div>
+              <h1 className="text-5xl lg:text-6xl font-bold text-gray-800 leading-tight">
+                Premium <span className="text-orange-600">Cat Boarding</span> Services in Delhi
+              </h1>
+              <p className="text-xl text-gray-600 mt-6 leading-relaxed">
+                Your feline friends deserve the best care while you're away. Our 24/7 professional cat boarding service ensures comfort, safety, and love.
+              </p>
+            </div>
 
-      <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight drop-shadow-lg relative">
-        <span className="block text-[#94cbaf]">Bringing Joy</span>
-        <span className="block text-[#c4e2d0] relative">
-          To{" "}
-          <span className="text-[#fcbf49] relative inline-block">
-            Every Meow
-            {/* Paws Image under "Meow" */}
-            <img
-              src={pawsImage}
-              loading="lazy"
-              alt="Paws"
-              className="absolute top-full mt-1 left-1/2 -translate-x-1/2 w-8 sm:w-10 md:w-14"
-            />
-          </span>
-        </span>
-      </h1>
+            {/* Rating */}
+            <div className="flex items-center space-x-4">
+              <div className="flex items-center space-x-1">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                ))}
+              </div>
+              <span className="text-lg font-semibold text-gray-700">5.0</span>
+              <span className="text-gray-600">(60+ Google Reviews)</span>
+            </div>
 
-      <button onClick={()=>{navigate("/gallery")}} className="mt-6 px-6 py-3 bg-[#0d1b2a] text-white rounded-lg shadow hover:bg-[#1e2e3e] transition drop-shadow-md">
-        Learn More
-      </button>
-    </div>
+            {/* Quick Info */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="flex items-center space-x-3 bg-white p-4 rounded-lg shadow-sm">
+                <Clock className="w-6 h-6 text-orange-600" />
+                <div>
+                  <p className="font-semibold text-gray-800">Open 24 Hours</p>
+                  <p className="text-sm text-gray-600">Always available</p>
+                </div>
+              </div>
+              <div className="flex items-center space-x-3 bg-white p-4 rounded-lg shadow-sm">
+                <MapPin className="w-6 h-6 text-orange-600" />
+                <div>
+                  <p className="font-semibold text-gray-800">Delhi Location</p>
+                  <p className="text-sm text-gray-600">Sitapuri, Dabri</p>
+                </div>
+              </div>
+            </div>
 
-    {/* Right: Cat Image */}
-    <div className="relative flex-1 w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl">
-      <img
-        src={BigCat}
-        loading="lazy"
-        alt="Happy Cat"
-        className="w-full h-auto object-contain"
-      />
-      {/* Bottom Blur Overlay */}
-      <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-[#94b49f] to-transparent pointer-events-none"></div>
-    </div>
-  </div>
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+              <a 
+                href="tel:08305014935"
+                className="bg-orange-600 text-white px-8 py-4 rounded-full hover:bg-orange-700 transition-colors duration-200 flex items-center justify-center space-x-2 text-lg font-semibold"
+              >
+                <Phone size={20} />
+                <span>Book Now: 083050 14935</span>
+              </a>
+              <button 
+                onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
+                className="border-2 border-orange-600 text-orange-600 px-8 py-4 rounded-full hover:bg-orange-600 hover:text-white transition-colors duration-200 text-lg font-semibold"
+              >
+                View Services
+              </button>
+            </div>
+          </div>
 
-  {/* Bottom Left Cat Paws */}
-  <div className="absolute bottom-0 left-4 h-14 sm:h-16 md:h-20 w-auto">
-    <img src={CatPaws} alt="Cat Paws" loading="lazy" className="h-full object-contain" />
-    <div className="absolute bottom-0 left-0 w-full h-6 bg-gradient-to-t from-[#94b49f] to-transparent pointer-events-none"></div>
-  </div>
+          {/* Right Image */}
+          <div className="relative">
+            <div className="grid grid-cols-2 gap-4">
+              <img 
+                src="https://images.pexels.com/photos/2071882/pexels-photo-2071882.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                alt="Happy cat in boarding facility"
+                className="rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300"
+              />
+              <img 
+                src="https://images.pexels.com/photos/1741205/pexels-photo-1741205.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                alt="Cat in comfortable room"
+                className="rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 mt-8"
+              />
+            </div>
+            <div className="absolute -bottom-4 -left-4 bg-white p-6 rounded-2xl shadow-xl">
+              <div className="text-center">
+                <p className="text-3xl font-bold text-orange-600">24/7</p>
+                <p className="text-sm text-gray-600">Professional Care</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
 
-  {/* Decorative Stroke */}
-  <img
-    src={Stroke}
-    alt="Decorative Stroke" loading="lazy"
-    className="absolute right-[15%] top-4 w-12 sm:w-20 md:w-32 lg:w-56 object-contain pointer-events-none select-none z-0"
-  />
-</div>
-
-  )
-}
-
-export default HeroSection
+export default Hero;
