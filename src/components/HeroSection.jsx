@@ -1,8 +1,7 @@
 import React from 'react'
 import BigCat from '../assets/BigCat.png'
 import CatPaws from '../assets/catpaws.png'
-import Stroke from '../assets/stroke.png'
-import arrow from '../assets/arrow.png'
+import Stroke from '../assets/Stroke.png'
 import pawsImage from '../assets/pawsImage.png'
 
 function HeroSection() {
