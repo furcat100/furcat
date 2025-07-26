@@ -1,8 +1,8 @@
 import React from 'react'
-import BigCat from '../assets/BigCat.png'
-import CatPaws from '../assets/catpaws.png'
-import Stroke from '../assets/Stroke.png'
-import pawsImage from '../assets/pawsImage.png'
+import BigCat from '../assets/BigCat.webp'
+import CatPaws from '../assets/catpaws.webp'
+import Stroke from '../assets/Stroke.webp'
+import pawsImage from '../assets/pawsImage.webp'
 
 function HeroSection() {
   return (

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import test1 from '../assets/test1.png';
-import test2 from '../assets/test2.png';
-import test3 from '../assets/test3.png';
-import test4 from '../assets/test4.png';
-import bottompaws from '../assets/bottompaws.png'; // Your bottom paws image
+import test1 from '../assets/test1.webp';
+import test2 from '../assets/test2.webp';
+import test3 from '../assets/test3.webp';
+import test4 from '../assets/test4.webp';
+import bottompaws from '../assets/bottompaws.webp'; // Your bottom paws image
 import { BsFillArrowLeftCircleFill } from "react-icons/bs";
 
 

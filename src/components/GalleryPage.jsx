@@ -2,14 +2,14 @@ import React from 'react';
 import { Eye } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
-import cat1 from '../assets/cats/cat9.JPG';
-import cat2 from '../assets/cats/cat2.JPG';     
-import cat3 from '../assets/cats/cat3.JPG';
-import cat4 from '../assets/cats/cat4.JPG';
-import cat5 from '../assets/cats/cat5.JPG';
-import cat6 from '../assets/cats/cat6.JPG';
-import cat7 from '../assets/cats/cat7.JPG';
-import cat8 from '../assets/cats/cat8.JPG';
+import cat1 from '../assets/cats/cat9.webp';
+import cat2 from '../assets/cats/cat2.webp';     
+import cat3 from '../assets/cats/cat3.webp';
+import cat4 from '../assets/cats/cat4.webp';
+import cat5 from '../assets/cats/cat5.webp';
+import cat6 from '../assets/cats/cat6.webp';
+import cat7 from '../assets/cats/cat7.webp';
+import cat8 from '../assets/cats/cat8.webp';
 
 const catsData = [
   { id: 1, name: "Cat 1", image: cat1 },

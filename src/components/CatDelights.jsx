@@ -1,8 +1,8 @@
 import React from 'react';
-import care from '../assets/care.png';
-import litter from '../assets/litterbox.png';
-import food from '../assets/catfood.png';
-import shelter from '../assets/shelter.jpg';
+import care from '../assets/care.webp';
+import litter from '../assets/litterbox.webp';
+import food from '../assets/catfood.webp';
+import shelter from '../assets/shelter.webp';
 
 const CatDelights = () => {
   return (
