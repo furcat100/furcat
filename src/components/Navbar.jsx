@@ -37,10 +37,10 @@ const Navbar = () => {
                 className="cursor-pointer hover:underline"
                 onClick={(e) => {
                   e.stopPropagation();
-                  handleCopy("08750291302");
+                  handleCopy("8305014935");
                 }}
               >
-                087502 91302
+                +91 8305014935
               </span>
             </div>
 
@@ -76,7 +76,7 @@ const Navbar = () => {
               onClick={() => handleCopy("08750291302")}
             >
               <FaPhoneAlt className="w-4 h-4 text-white" />
-              <span className="cursor-pointer">087502 91302</span>
+              <span className="cursor-pointer">+91 8305014935</span>
             </div>
 
             <div className="flex items-center space-x-2 text-base">
@@ -117,11 +117,11 @@ const Navbar = () => {
 
               <div
                 className="flex items-center space-x-3 cursor-pointer"
-                onClick={() => handleCopy("08750291302")}
+                onClick={() => handleCopy("8305014935")}
               >
                 <FaPhoneAlt className="text-[#5c836c]" size={20} />
                 <span className="font-semibold">
-                  Call or click to copy: 087502 91302
+                  Call or click to copy: +91 8305014935
                 </span>
               </div>
 
@@ -137,7 +137,7 @@ const Navbar = () => {
                   We will take care of your cat like you take care of them, because we haven't opened a shop — we keep cats at home 🥰
                 </p>
                 <p className="mb-2">
-                  <strong>Contact:</strong> 8305014935
+                  <strong>Contact:</strong> +91 8305014935
                 </p>
                 <ul className="list-disc list-inside space-y-1">
                   <li>Cat care</li>
