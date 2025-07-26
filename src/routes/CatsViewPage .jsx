@@ -1,25 +1,10 @@
 import React, { useState } from 'react';
 import { Heart, Home, Utensils, Package, Bed, ArrowLeft, X } from 'lucide-react';
-import cat2 from '../assets/cats/cat2.webp';
-import cat3 from '../assets/cats/cat3.webp';
-import cat4 from '../assets/cats/cat4.webp';
-import cat5 from '../assets/cats/cat5.webp';
-import cat6 from '../assets/cats/cat6.webp';
-import cat7 from '../assets/cats/cat7.webp';
-import cat8 from '../assets/cats/cat8.webp';
-import cat9 from '../assets/cats/cat9.webp';
-import cat10 from '../assets/cats/cat10.webp';
-import cat11 from '../assets/cats/cat11.webp';
-import cat12 from '../assets/cats/cat12.webp';
-import cat13 from '../assets/cats/cat13.webp';
-import cat14 from '../assets/cats/cat14.webp';
-import cat15 from '../assets/cats/cat15.webp';
-import cat16 from '../assets/cats/cat16.webp';
-import cat17 from '../assets/cats/cat17.webp';
-import cat18 from '../assets/cats/cat18.webp';
-import cat19 from '../assets/cats/cat19.webp';
+import CatGalleryCloudinary from '../components/CatGalleryCloudinary'; // adjust path if needed
+
 import { TiArrowBack } from "react-icons/ti";
 import { ImCross } from "react-icons/im";
+
 
 
 // Services data
@@ -46,27 +31,6 @@ const services = [
   }
 ];
 
-// Cat images array - replace these URLs with your actual cat images
-const catImages = [
-  cat2,
-  cat3,
-  cat4,
-  cat5,
-  cat6,
-  cat7,
-  cat8,
-  cat9,
-  cat10,
-  cat11,
-  cat12,
-  cat13,
-  cat14,
-  cat15,
-  cat16,
-  cat17,
-  cat18,
-  cat19
-];
 
 
 const CatsViewPage = () => {
@@ -123,32 +87,8 @@ const CatsViewPage = () => {
           <p className="text-center text-gray-600 mb-12 text-lg">
             Click on any image to view it in full size
           </p>
-          
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
-            {catImages.map((image, index) => (
-              <div 
-            key={index} 
-            className="group cursor-pointer text-center"
-            onClick={() => setSelectedImage(image)}
-            >
-            <div className="relative overflow-hidden rounded-2xl shadow-lg bg-white transition-all duration-300 group-hover:shadow-2xl group-hover:scale-105">
-                <img 
-                src={image} 
-                alt={`Cat ${index + 2}`} loading="lazy"
-                className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="absolute bottom-4 left-4 text-white">
-                    <div className="w-8 h-8 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
-                    <Heart size={16} className="text-white" />
-                    </div>
-                </div>
-                </div>
-            </div>
-            </div>
+          <CatGalleryCloudinary onImageClick={setSelectedImage} />
 
-            ))}
-          </div>
         </div>
       </div>
 

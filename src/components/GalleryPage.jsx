@@ -1,30 +1,11 @@
 import React from 'react';
 import { Eye } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import CatGalleryCloudinary from '../components/CatGalleryCloudinary'; // adjust path if needed
 
-import cat1 from '../assets/cats/cat9.webp';
-import cat2 from '../assets/cats/cat2.webp';     
-import cat3 from '../assets/cats/cat3.webp';
-import cat4 from '../assets/cats/cat4.webp';
-import cat5 from '../assets/cats/cat5.webp';
-import cat6 from '../assets/cats/cat6.webp';
-import cat7 from '../assets/cats/cat7.webp';
-import cat8 from '../assets/cats/cat8.webp';
-
-const catsData = [
-  { id: 1, name: "Cat 1", image: cat1 },
-  { id: 2, name: "Cat 2", image: cat2 },
-  { id: 3, name: "Cat 3", image: cat3 },
-  { id: 4, name: "Cat 4", image: cat4 },
-  { id: 5, name: "Cat 5", image: cat5 },
-  { id: 6, name: "Cat 6", image: cat6 },
-  { id: 7, name: "Cat 7", image: cat7 },
-  { id: 8, name: "Cat 8", image: cat8 }
-];
 
 const CatsGalleryPreview = () => {
   const navigate = useNavigate();
-  const previewCats = catsData.slice(0, 6);
 
   return (
     <section className="py-16 bg-white">
@@ -41,23 +22,10 @@ const CatsGalleryPreview = () => {
         </div>
 
         {/* Grid of cats */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          {previewCats.map((cat) => (
-            <div key={cat.id} className="group cursor-pointer">
-              <div className="relative overflow-hidden rounded-2xl shadow-md transition-all duration-300 group-hover:shadow-xl group-hover:scale-105 flex items-center justify-center h-64 bg-white">
-                <img 
-                  src={cat.image} 
-                  alt={cat.name}
-                  loading="lazy"
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-                />
-              </div>
-            </div>
-          ))}
-        </div>
+        <CatGalleryCloudinary  limit={5} />
 
         {/* View All Button */}
-        <div className="text-center">
+        <div className="text-center mt-3 ">
           <button 
             onClick={() => navigate('/gallery')}
             className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold text-white rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg"

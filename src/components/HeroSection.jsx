@@ -3,8 +3,12 @@ import BigCat from '../assets/BigCat.webp'
 import CatPaws from '../assets/catpaws.webp'
 import Stroke from '../assets/Stroke.webp'
 import pawsImage from '../assets/pawsImage.webp'
+import { useNavigate } from 'react-router-dom'
 
 function HeroSection() {
+
+  const navigate = useNavigate();
+
   return (
     <div className="bg-[#94b49f] w-full min-h-screen flex items-center justify-center px-4 sm:px-6 py-10 relative overflow-hidden">
   {/* Main Container */}
@@ -33,7 +37,7 @@ function HeroSection() {
         </span>
       </h1>
 
-      <button className="mt-6 px-6 py-3 bg-[#0d1b2a] text-white rounded-lg shadow hover:bg-[#1e2e3e] transition drop-shadow-md">
+      <button onClick={()=>{navigate("/gallery")}} className="mt-6 px-6 py-3 bg-[#0d1b2a] text-white rounded-lg shadow hover:bg-[#1e2e3e] transition drop-shadow-md">
         Learn More
       </button>
     </div>
