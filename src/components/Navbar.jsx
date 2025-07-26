@@ -29,7 +29,7 @@ const Navbar = () => {
             </div>
           </div>
 
-          {/* Desktop Menu */}
+
           <div className="hidden md:flex items-center space-x-6">
             <div className="flex items-center space-x-2 text-base">
               <FaPhoneAlt className="w-4 h-4 text-white" />
