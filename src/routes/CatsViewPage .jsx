@@ -14,7 +14,7 @@ import cat12 from '../assets/cats/cat12.JPG';
 import cat13 from '../assets/cats/cat13.JPG';
 import cat14 from '../assets/cats/cat14.JPG';
 import cat15 from '../assets/cats/cat15.JPG';
-import cat16 from '../assets/cats/cat16.JPG';
+import cat16 from '../assets/cats/cat16.jpg';
 import cat17 from '../assets/cats/cat17.JPG';
 import cat18 from '../assets/cats/cat18.JPG';
 import cat19 from '../assets/cats/cat19.JPG';
