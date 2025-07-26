@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FaPhoneAlt, FaClock, FaBars } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
 import { toast } from "react-hot-toast";
+import logo from "../assets/logo.png"; // Adjust the path if needed
 
 const Navbar = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -20,7 +21,7 @@ const Navbar = () => {
           {/* LOGO + TEXT */}
           <div className="flex items-center space-x-4">
             <div className="w-12 h-12 bg-[#F1C27B] rounded-full flex items-center justify-center shadow-lg">
-              <span className="text-white text-2xl">🐾</span>
+              <img src={logo} />
             </div>
             <div>
               <h1 className="text-xl font-bold text-white leading-tight">Four Paws Cat Boarding</h1>
