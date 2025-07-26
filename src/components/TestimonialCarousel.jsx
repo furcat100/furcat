@@ -56,7 +56,7 @@ const TestimonialCarousel = () => {
   <div className="absolute top-0 right-2 sm:right-6 w-40 sm:w-60 md:w-80 z-10">
     <img
       src={bottompaws}
-      alt="Cat Paw"
+      alt="Cat Paw" loading="lazy"
       className="w-full h-auto"
     />
     <div className="absolute top-1 left-0 w-full h-8 bg-gradient-to-b from-[#062D3E] to-transparent pointer-events-none"></div>
@@ -84,10 +84,10 @@ const TestimonialCarousel = () => {
         Our Purr-fectly <br className="block sm:hidden" />
         Satisfied Customers
       </h2>
-      <div className="relative w-60 sm:w-72 h-60 sm:h-72 rounded-md overflow-hidden border-4 border-white shadow-lg">
+      <div className="relative w-60 sm:w-72 h-60 sm:h-72 rounded-md  border-4 border-white shadow-lg">
         <img
           src={current.image}
-          alt={current.name}
+          alt={current.name} loading="lazy"
           className="w-full h-full object-cover"
         />
       </div>

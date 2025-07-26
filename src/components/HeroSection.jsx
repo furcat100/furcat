@@ -25,6 +25,7 @@ function HeroSection() {
             {/* Paws Image under "Meow" */}
             <img
               src={pawsImage}
+              loading="lazy"
               alt="Paws"
               className="absolute top-full mt-1 left-1/2 -translate-x-1/2 w-8 sm:w-10 md:w-14"
             />
@@ -41,6 +42,7 @@ function HeroSection() {
     <div className="relative flex-1 w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl">
       <img
         src={BigCat}
+        loading="lazy"
         alt="Happy Cat"
         className="w-full h-auto object-contain"
       />
@@ -51,14 +53,14 @@ function HeroSection() {
 
   {/* Bottom Left Cat Paws */}
   <div className="absolute bottom-0 left-4 h-14 sm:h-16 md:h-20 w-auto">
-    <img src={CatPaws} alt="Cat Paws" className="h-full object-contain" />
+    <img src={CatPaws} alt="Cat Paws" loading="lazy" className="h-full object-contain" />
     <div className="absolute bottom-0 left-0 w-full h-6 bg-gradient-to-t from-[#94b49f] to-transparent pointer-events-none"></div>
   </div>
 
   {/* Decorative Stroke */}
   <img
     src={Stroke}
-    alt="Decorative Stroke"
+    alt="Decorative Stroke" loading="lazy"
     className="absolute right-[15%] top-4 w-12 sm:w-20 md:w-32 lg:w-56 object-contain pointer-events-none select-none z-0"
   />
 </div>

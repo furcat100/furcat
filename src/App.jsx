@@ -8,7 +8,7 @@ function App() {
 
   return (
    
-   <div>
+   <div className='scroll-smooth' >
      <Routes> 
 
       <Route path="/" element={<Home />} />

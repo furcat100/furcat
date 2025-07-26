@@ -48,6 +48,7 @@ const CatsGalleryPreview = () => {
                 <img 
                   src={cat.image} 
                   alt={cat.name}
+                  loading="lazy"
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                 />
               </div>

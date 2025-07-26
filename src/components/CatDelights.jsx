@@ -28,6 +28,7 @@ const CatDelights = () => {
                 <img
                   src={item.img}
                   alt={item.label}
+                  loading="lazy"
                   className="w-full h-full object-cover"
                 />
               </div>
