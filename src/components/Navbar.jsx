@@ -37,7 +37,7 @@ const Navbar = () => {
                 className="cursor-pointer hover:underline"
                 onClick={(e) => {
                   e.stopPropagation();
-                  handleCopy("8305014935");
+                  handleCopy("8305014935")
                 }}
               >
                 +91 8305014935
